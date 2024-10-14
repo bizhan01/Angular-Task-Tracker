@@ -1,1 +1,5 @@
-<p>tasks works!</p>
+@for (item of tasks; track item.text) {
+    <li>{{ item.text }}</li>
+    } @empty {
+    <li>There are no items.</li>
+    }

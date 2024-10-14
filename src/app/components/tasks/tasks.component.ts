@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import {Task} from '../../Task';
+import {TASKS} from '../../mock-tasks';
 
 @Component({
   selector: 'app-tasks',
@@ -8,5 +10,6 @@ import { Component } from '@angular/core';
   styleUrl: './tasks.component.css'
 })
 export class TasksComponent {
+  tasks: Task[] = TASKS;
 
 }
