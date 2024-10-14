@@ -12,4 +12,8 @@ import { ButtonComponent } from "../button/button.component";
 export class HeaderComponent {
   title = 'Angular Task Tracker';
 
+  toggleAddTask() {
+    console.log('toggle');
+    
+  }
 }

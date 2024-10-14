@@ -1,1 +1,6 @@
-<Button [style]="{'background-color': color}" class="btn">{{text}}</Button>
+<Button [style]="{'background-color': color}"
+ class="btn"
+ (click)="onClick()"
+ >
+    {{text}}
+</Button>
