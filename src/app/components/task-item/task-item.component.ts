@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import {Task} from '../../Task';
 
 @Component({
   selector: 'app-task-item',
@@ -7,6 +8,8 @@ import { Component } from '@angular/core';
   templateUrl: './task-item.component.html',
   styleUrl: './task-item.component.css'
 })
-export class TaskItemComponent {
 
+
+export class TaskItemComponent {
+  @Input() task!: Task;
 }
